@@ -1,3 +1,25 @@
+# Plano de Leitura — Visão Geral do App
+
+> Este documento descreve a visão original do app (seção "Especificação original — Seção Bíblia" abaixo, hoje implementada e congelada na seção Bíblia) e a evolução para uma arquitetura de 3 telas independentes.
+
+## Arquitetura atual (v3)
+
+O app é um PWA em React + Vite + Tailwind CSS com 3 telas totalmente independentes, navegáveis por rota (`HashRouter`):
+
+- **`/`** — Home: estatísticas agregadas (leitura somente da `localStorage`, sem lógica de escrita) e navegação para as duas seções.
+- **`/biblia`** — Seção de leitura bíblica (ver especificação original abaixo). Implementada e **congelada**: nenhuma alteração de código é feita aqui desde a v3.
+- **`/livros`** — Seção de leitura de livros, isolada, sem compartilhar código com a Bíblia. Ver especificação completa em `docs/Modulo_Livros_v2.md` e o plano de implementação em `docs/Plano_Implementacao_Livros_v2.md`.
+
+Cada seção tem sua própria persistência no `localStorage` (`bpwa-plans-v1` para a Bíblia, `bpwa-books-v1` para Livros) e seu próprio backup exportável, sem misturar dados entre si.
+
+Regra permanente: os arquivos `src/App.jsx`, `src/hooks/usePlans.js`, `src/lib/bible.js`, `src/components/PlanCreator.jsx`, `src/components/Dashboard.jsx`, `src/components/Backup.jsx` e `src/data/bible_structure.json` não são modificados — a seção Bíblia só passou a ser renderizada dentro de uma rota.
+
+---
+
+## Especificação original — Seção Bíblia
+
+*(implementada e congelada; mantida aqui como referência histórica)*
+
 Quero criar um Web App PWA completo, moderno e responsivo em React + Vite + Tailwind CSS para geração e gerenciamento flexível de planos de leitura bíblica.
 
 Por favor, implemente a aplicação do zero seguindo esta estrutura e requisitos:
