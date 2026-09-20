@@ -99,8 +99,8 @@ export default function BookCreator({ onCreate, onCancel }) {
             onClick={() => setUnit(k)}
             className={`rounded-lg border px-3 py-2 text-sm font-medium ${
               unit === k
-                ? 'border-bk-ocean bg-bk-ocean text-white'
-                : 'border-bk-line bg-bk-paper2 text-bk-ink hover:border-bk-ocean'
+                              ? 'border border-bk-ocean bg-bk-ocean text-white'
+                              : 'border border-bk-line bg-bk-paper2 text-bk-ink hover:border-bk-ocean'
             }`}
           >
             {label}
@@ -136,8 +136,8 @@ export default function BookCreator({ onCreate, onCancel }) {
             onClick={() => setMode(k)}
             className={`rounded-lg border px-2 py-2 text-sm font-medium ${
               mode === k
-                ? 'border-bk-clay bg-bk-clay/15 text-bk-oceandeep'
-                : 'border-bk-line bg-bk-paper2 text-bk-ink hover:border-bk-ocean'
+                              ? 'border border-bk-clay bg-bk-clay/15 text-bk-oceandeep'
+                              : 'border border-bk-line bg-bk-paper2 text-bk-ink hover:border-bk-ocean'
             }`}
           >
             {label}

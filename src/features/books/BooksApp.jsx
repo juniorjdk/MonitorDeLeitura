@@ -103,7 +103,7 @@ export default function BooksApp() {
                 </button>
               )}
               {books.map((b) => (
-                <div key={b.id} className={`rounded-2xl border p-4 ${b.id === activeBookId ? 'border-bk-ocean bg-bk-paper/80' : 'border border-bk-line bg-bk-paper/50'}`}>
+                <div key={b.id} className={`rounded-2xl border p-4 ${b.id === activeBookId ? 'border border-bk-ocean bg-bk-paper/80' : 'border border-bk-line bg-bk-paper/50'}`}>
                   <div className="flex items-center gap-2">
                     <div className="flex-1">
                       <div className="font-serif text-lg font-bold text-bk-oceandeep">{b.title}</div>
