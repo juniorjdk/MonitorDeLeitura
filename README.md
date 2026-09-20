@@ -4,6 +4,10 @@ Web app PWA para criar e acompanhar planos de leitura com metas diárias **propo
 
 🔗 **App no ar:** [juniorjdk.github.io/MonitorDeLeitura](https://juniorjdk.github.io/MonitorDeLeitura/)
 
+## 💛 Por que esse app existe
+
+Esse app nasceu para minhas filhas, **Clara** e **Ana Julia**, registrarem suas leituras diárias e terem como gerenciar sua leitura com metas e cronograma — seja da Bíblia, seja de qualquer outro livro.
+
 ---
 
 ## ✨ O que o app faz
